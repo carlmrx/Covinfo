@@ -15,7 +15,14 @@
 </head>
 <!--barra de navegacion-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand text-light ml-5" href="#">Covinfo</a>
+    <a class="nav-link dropdown-toggle text-light ml-5" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Covinfo
+      </a>
+    <div class="dropdown-menu ml-5" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="#">Recomendaciones</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Biblioteca</a>
+    </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -39,14 +46,14 @@
                 <div class="col-md-12 text-center secciones">
                     <div class="row">
                         <div class="col-md-9 col-xs-12">
-                            <h2><a href="https://coronavirus.gob.mx/covid-19/" class="titulo"> COVID-19 Mexico</a></h2>
+                            <h2><a href="https://coronavirus.gob.mx/covid-19/" class="titulo d-none d-lg-block"> COVID-19 Mexico</a></h2>
                             <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                                 <ol class="carousel-indicators">
                                     <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
                                     <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
                                     <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
                                 </ol>
-                                <div class="carousel-inner">
+                                <div class="carousel-inner mt-4">
                                     <div class="carousel-item active">
                                         <img src="img/mapa-mexico.png" style="size: 100%;" class="d-block w-100" alt="...">
                                         <div class="carousel-caption d-none d-md-block">
@@ -84,14 +91,14 @@
                             </div>
                         </div>
                         <div class="col-md-3 col-xs-12 mt-5">
-                            <h3>Mapas COVID-19</h3>
+                            <h3 class="d-none d-lg-block">Mapas COVID-19</h3>
                             <div class="list-group">
                                 <a href="https://coronavirus.gob.mx/fHDMap/mun.php" style="background-color:#FC035A;color: white!important;" class="list-group-item list-group-item-action ">Gob.mx</a>
                                 <a href="https://coronavirus.jhu.edu/map.html" class="list-group-item list-group-item-action">Johns Hopkins University</a>
                                 <a href="https://news.google.com/covid19/map?hl=es-419&gl=MX&ceid=MX:es-419" class="list-group-item list-group-item-action">Google</a>
                                 <a href="https://www.bing.com/covid/local/mexico" class="list-group-item list-group-item-action">bing</a>
                             </div>
-                            <div class="animate__animated animate__bounce animate__faster; d-none d-md-block">
+                            <div class="animate__animated animate__bounce animate__faster; d-none d-xl-block ">
                                 <a href="https://www.paho.org/es/temas/coronavirus/brote-enfermedad-por-coronavirus-covid-19">
                                     <div class="card text-white bg-danger mt-4" style="max-width: 18rem;">
                                         <div class="card-body">
@@ -133,20 +140,22 @@
                                 </p>
                                 <p><b>Adopte medidas de higiene respiratoria</b><br>Al toser o estornudar, cúbrase la boca y la nariz con el codo flexionado o con un pañuelo; tire el pañuelo inmediatamente y lávese las manos con un desinfectante de manos
                                     a base de alcohol, o con agua y jabón.<br>
-                                    <b>¿Por qué?</b>Al cubrir la boca y la nariz durante la tos o el estornudo se evita la propagación de gérmenes y virus. Si usted estornuda o tose cubriéndose con las manos puede contaminar los objetos o las personas
+                                    <b>¿Por qué?</b >Al cubrir la boca y la nariz durante la tos o el estornudo se evita la propagación de gérmenes y virus. Si usted estornuda o tose cubriéndose con las manos puede contaminar los objetos o las personas
                                     a los que toque.<br> <u>Vea el <a href="https://www.youtube.com/watch?v=z3G0ClAg1TM"  style="color: purple!important;">video</a> sobre el buenas practicas de estornudo.</u>
                                 </p>
-                                <p><b>Mantenga el distanciamiento social</b><br>Mantenga al menos 1 metro (3 pies) de distancia entre usted y las demás personas, particularmente aquellas que tosan, estornuden y tengan fiebre.<br>
-                                    <b>¿Por qué?</b>Cuando alguien con una enfermedad respiratoria, como la infección por el 2019-nCoV, tose o estornuda, proyecta pequeñas gotículas que contienen el virus. Si está demasiado cerca, puede inhalar el virus.<br><u> Vea
+                                <p><b>Mantenga el distanciamiento social</b><br>Mantenga al menos 1 metro (3 pies) de distancia entre usted y las demás personas, particularmente aquellas que tosan, estornuden y tengan
+                                    fiebre.
+                                    <br>
+                                    <b>¿Por qué?</b> Cuando alguien con una enfermedad respiratoria, como la infección por el 2019-nCoV, tose o estornuda, proyecta pequeñas gotículas que contienen el virus. Si está demasiado cerca, puede inhalar el virus.<br><u> Vea
                                      <a href="https://www.youtube.com/watch?v=O9kSNevUDEQ"  style="color: purple!important;">video</a> sobre la sana distancia</u>
                                 </p>
                                 <p><b>Evite tocarse los ojos, la nariz y la boca</b><br>
-                                    <b>¿Por qué?</b>Las manos tocan muchas superficies que pueden estar contaminadas con el virus. Si se toca los ojos, la nariz o la boca con las manos contaminadas, puedes transferir el virus de la superficie a si mismo.
+                                    <b>¿Por qué?</b> Las manos tocan muchas superficies que pueden estar contaminadas con el virus. Si se toca los ojos, la nariz o la boca con las manos contaminadas, puedes transferir el virus de la superficie a si mismo.
                                 </p>
                                 <p><b>Si tiene fiebre, tos y dificultad para respirar, solicite atención médica a tiempo</b><br> Indique a su prestador de atención de salud si ha viajado a una zona de China en la que se haya notificado la presencia del 2019-nCoV,
                                     o si ha tenido un contacto cercano con alguien que haya viajado desde China y tenga síntomas respiratorios.<br>
-                                    <b>¿Por qué?</b>Siempre que tenga fiebre, tos y dificultad para respirar, es importante que busque atención médica de inmediato, ya que dichos síntomas pueden deberse a una infección respiratoria o a otra afección grave.
-                                    Los síntomas respiratorios con fiebre pueden tener diversas causas, y dependiendo de sus antecedentes de viajes y circunstancias personales, el 2019-nCoV podría ser una de ellas.<br> <u>Vea el <a href="https://www.youtube.com/watch?v=KHNzrhkNAZw"
+                                    <b>¿Por qué?</b> Siempre que tenga fiebre, tos y dificultad para respirar, es importante que busque atención médica de inmediato, ya que dichos síntomas pueden deberse a una infección respiratoria o a otra afección
+                                    grave. Los síntomas respiratorios con fiebre pueden tener diversas causas, y dependiendo de sus antecedentes de viajes y circunstancias personales, el 2019-nCoV podría ser una de ellas.<br> <u>Vea el <a href="https://www.youtube.com/watch?v=KHNzrhkNAZw"
                                     style="color: purple!important;">video</a> sobre sintomas de COVID-19 o valla a la seccion de Atencion o Infrmacion.</u>
                                 </p>
                                 <p class="text-right">
@@ -154,7 +163,7 @@
                                 </p>
                             </div>
                         </div>
-                        <!-- seccion vinculada aatencion -->
+                        <!-- seccion vinculada a atencion -->
                         <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                             <h3>¿Crees haber contraido Covid-19?</h3>
                             <p>Te mostramos las herramientas digitales con las que te puedes apoyar como test, encuestas, manuales e informacion de atencion </p>
@@ -169,14 +178,14 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="col-md-8  d-none d-lg-block text-justify" style="margin-top: 4%;">
+                                <div class="col-md-8 d-none d-sm-block text-justify" style="margin-top: 4%;">
                                     <p style="    font-size: 21px; ">Este cuestionario no sustituye a una prueba clínica que identifica casos asintomáticos; es únicamente informativo y no representa un diagnóstico médico. Si presentas deterioro en tu salud, acude inmediatamente a tu
                                         Unidad Médica para que te brinden la atención necesaria. </p>
                                     <h5>Da clic en el recuadro verde</h5>
                                 </div>
                             </div>
                             <div class="row mt-5">
-                                <div class="col-md-8  d-none d-lg-block text-justify" style="margin-top: 4%;">
+                                <div class="col-md-8 d-none d-sm-block text-justify" style="margin-top: 4%;">
                                     <p style="    font-size: 21px; ">Esta Calculadora te permite estimar tu probabilidad de agravamiento de la enfermedad ante un posible contagio de COVID-19 y se basa en los factores de riesgo que puedas presentar en estos momentos, indicándote una probable
                                         ponderación. </p>
                                     <h5>Da clic en el recuadro amarillo</h5>
@@ -194,7 +203,7 @@
                             </div>
                             <h3 class="mt-5">Guia hospitales y dependencias de salud estatales COVID de Mexico</h3>
                             <div class="row mt-5">
-                                <div class="col-md-8 d-none d-lg-block ">
+                                <div class="col-md-8 d-none d-sm-block">
                                     <img src="img/hospital.png" alt="">
                                 </div>
                                 <div class="col-md-4 mt-5 " style="margin-top: 4%;">
