@@ -120,20 +120,20 @@
     <!-- la primera seccion de headder muestra un carusel de informacion general y elaces a mpas sobre el cobid-->
     <!-- menu de navegacion en misma pagina muestra informacion general sobre info, atencion e informacion  -->
     <section>
-        <div class="container">
+        <div>
             <div class="row">
-                <div class="col-md-12 text-center secciones mb-5" style="background-color: whitesmoke;border-radius: 11px">
+                <div class="col-md-12 secciones mb-5  basica">
                     <!-- cada link "a" nos muestra una seccion diferente-->
                     <nav>
-                        <div class="nav nav-tabs " id="nav-tab" role="tablist">
-                            <a class="nav-item nav-link active text-info" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Prevencion</a>
-                            <a class="nav-item nav-link text-info" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Atencion</a>
-                            <a class="nav-item nav-link text-info" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Informacion</a>
+                        <div class="nav nav-tabs text- " id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link active " id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Prevencion</a>
+                            <a class="nav-item nav-link " id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Atencion</a>
+                            <a class="nav-item nav-link " id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Informacion</a>
                         </div>
                     </nav>
                     <!-- seccion vinculada a informacion basica (default)-->
                     <div class="tab-content mt-5" id="nav-tabContent">
-                        <div class="tab-pane fade show active text-left pl-5 pr-5 pb-4" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <div class="tab-pane fade show active text-left " id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                             <h3>Informacion basica</h3>
                             <h4>¿Coronavirus?</h4>
                             <p>De acuerdo con la Secretaría de Salud, los coronavirus (COV) son una familia virus que causan enfermedades respiratorias, que van desde un resfriado hasta padecimientos graves, y se pueden presentar entre humanos y animales.
@@ -150,50 +150,51 @@
                                     <br> El referido medio señala que existen seis tipos de coronavirus que infectan a las personas, y el COVID-19, es el séptimo, y algunos de sus síntomas son: dificultad para respirar, fiebre, tos y dolor muscular.
                                     <br> A este séptimo integrante de los coronavirus, la OMS lo nombró COVID-19: COV es un acrónimo inglés con base en la expresión «coronavirus disease», es decir, “enfermedad de coronavirus”.
                                     <br> El 31 de diciembre pasado, cuando recién fue detectado, lo denominaron 2019: nCov: “n” nuevo, “CoV” coronavirus, de 2019.</p>
+                                <p class="text-right">
+                                    Informacion Extraída de la Organizacion Mundial de la Salud (OMS).<br> Vea mas informacion en su <u><a href="https://www.who.int/es/emergencies/diseases/novel-coronavirus-2019 " >pagina web.</a></u>
+                                </p>
                             </div>
                         </div>
                         <!-- seccion vinculada a atencion -->
                         <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                             <h3>¿Crees haber contraido Covid-19?</h3>
                             <p>Te mostramos las herramientas digitales con las que te puedes apoyar como test, encuestas, manuales e informacion de atencion </p>
-                            <p class="animate__animated animate__zoomIn"> <b><u>(Si te sientes mal "POR FAVOR ACUDE AL MEDICO CUANTO ANTES")</u></b></p>
+                            <p class="animate__animated animate__zoomIn"> <b>(Si te sientes mal "POR FAVOR ACUDE AL MEDICO CUANTO ANTES")</b></p>
                             <div class="row mt-5">
-                                <div class="col-md-4">
-                                    <a href="https://testcoronavirus.imss.gob.mx/webcovid19/Account/Login?ReturnUrl=%2Fwebcovid19%2F">
-                                        <div class="card text-white  mb-3" style="padding: 23px;background-color: green;border-radius: 28px">
-                                            <h5 class="card-title">Cuestionario de sintomas <br> COVID-19 de gob.mx</h5>
-                                            <img class="imagenes" src="img/covid-19.jpg" alt="COVID-19">
-                                            <p class="card-text">Ten tu CURP a la mano es un pequeño test de preguntas</p>
-                                        </div>
-                                    </a>
+                                <div class="col-md-4 d-none d-sm-block">
+
+                                    <img src="img/codicioso.png" alt="" style="width: 75%;
+                                        margin-left: 5%;">
+
                                 </div>
-                                <div class="col-md-8 d-none d-sm-block text-justify" style="margin-top: 4%;">
-                                    <p style="    font-size: 21px; ">Este cuestionario no sustituye a una prueba clínica que identifica casos asintomáticos; es únicamente informativo y no representa un diagnóstico médico. Si presentas deterioro en tu salud, acude inmediatamente a tu
+                                <div class="col-md-8 text-justify" style="margin-top: 4%;">
+                                    <h3>Cuestionario de sintomas</h3>
+                                    <br>
+                                    <p style=" font-size: 21px; ">Este cuestionario no sustituye a una prueba clínica que identifica casos asintomáticos; es únicamente informativo y no representa un diagnóstico médico. Si presentas deterioro en tu salud, acude inmediatamente a tu
                                         Unidad Médica para que te brinden la atención necesaria. </p>
-                                    <h5>Da clic en el recuadro verde</h5>
+                                    <a class="btn btn-danger text-light" href="https://testcoronavirus.imss.gob.mx/webcovid19/Account/Login?ReturnUrl=%2Fwebcovid19%2F" role="button">Ir al custionario</a>
                                 </div>
                             </div>
                             <div class="row mt-5">
-                                <div class="col-md-8 d-none d-sm-block text-justify" style="margin-top: 4%;">
+                                <div class="col-md-8 text-justify" style="margin-top: 4%;">
+                                    <h3>¿Perteneces a un grupo de riesgo?</h3>
+                                    <br>
                                     <p style="    font-size: 21px; ">Esta Calculadora te permite estimar tu probabilidad de agravamiento de la enfermedad ante un posible contagio de COVID-19 y se basa en los factores de riesgo que puedas presentar en estos momentos, indicándote una probable
                                         ponderación. </p>
-                                    <h5>Da clic en el recuadro amarillo</h5>
+                                    <a class="btn btn-warning text-light" href="http://www.imss.gob.mx/covid-19/calculadora-complicaciones" role="button">Ir al custionario</a>
                                 </div>
-                                <div class="col-md-4">
-                                    <a href="http://www.imss.gob.mx/covid-19/calculadora-complicaciones">
-                                        <div class="card text-white  mb-3" style="padding: 23px;background-color: rgb(244 180 0);border-radius: 28px">
-                                            <h5 class="card-title">Calculadora de complicació<br> por COVID-19 de imss.gob.mx</h5>
-                                            <img class="imagenes" src="img/imss.png" alt="COVID-19">
-                                            <p class="card-text">Calculador medico de riesgos </p>
-                                        </div>
-                                    </a>
+                                <div class="col-md-4 d-none d-sm-block">
+
+                                    <img src="img/coronavirus-alert.png" style="width:75%">
+
                                 </div>
 
                             </div>
                             <h3 class="mt-5">Guia hospitales y dependencias de salud estatales COVID de Mexico</h3>
                             <div class="row mt-5">
-                                <div class="col-md-8 d-none d-sm-block">
-                                    <img style="max-width: -webkit-fill-available; width: 100%;" src="img/hospital.png" alt="">
+                                <div class="col-md-8 d-none d-none d-sm-block">
+                                    <img style="max-width: -webkit-fill-available;     width: 50%;
+                                    margin-left: 26%;" src="img/hospital.png" alt="">
                                 </div>
                                 <div class="col-md-4 mt-5 " style="margin-top: 4%;">
                                     <h4 class=mb-4>Selecciona tu entidad Federativa </h4>
@@ -247,21 +248,17 @@
                                 <div class="container mb-4">
                                     <h3 class="text-center">¿Donde puedo obtener Pruebas Medicas COVID-19 seguras?</h3>
                                     <div class="row mt-5">
-                                        <div class="col-md-8 text-justify" style="margin-top: 2%;">
+                                        <div class="col-md-8 text-justify" style="margin-top:3%;">
                                             <p>El diagnóstico de la enfermedad COVID-19, provocada por el virus de SARS-CoV-2, es realizado en pacientes que sufren síntomas asociados a la misma (tos, disnea y fiebre, principalmente), mediante la prueba PCR
                                                 o test rápidos.<br> La prueba que se hace en México, tanto en laboratorios públicos como privados, es la conocida como PCR o de reacción en cadena de la polimerasa, que detecta el material genético del virus.
                                                 Es el estándar diagnóstico utilizado hasta ahora en México y la mayoría de países por recomendación de la Organización Mundial de la Salud (OMS).
                                             </p>
-
+                                            <a class="btn btn-light" href="https://www.gob.mx/salud/documentos/servicios-del-instituto-de-diagnostico-y-referencia-epidemiologicos-174933" role="button">Mas informacion</a>
                                         </div>
-                                        <div class="col-md-4">
-                                            <a href="https://www.gob.mx/salud/documentos/servicios-del-instituto-de-diagnostico-y-referencia-epidemiologicos-174933">
-                                                <div class="card text-white  mb-3" style="padding: 23px;background-color: rgb(247 247 247);border-radius: 28px;color: #a4354b!important;">
-                                                    <h5 class="card-title">Servicios del Instituto de Diagnóstico y <br>Referencia Epidemiológicos</h5>
-                                                    <img style="width: 80%;align-self: center;" src="img/salud.jpg" alt="COVID-19">
+                                        <div class="col-md-4 d-none d-sm-block">
 
-                                                </div>
-                                            </a>
+                                            <img src="img/microscopio.png" alt="" style="width:85%;">
+
                                         </div>
                                     </div>
                                 </div>
@@ -269,7 +266,7 @@
                             <div class="col-xs-12 mb-5">
                                 <h3>¿La prueba tiene algun costo?</h3>
                                 <p>En la Ciudad de México los precios de esta prueba de laboratorio oscilan entre los $1,300 y los $4,500 pesos. </p>
-                                <h5>Da clic en el recuadro blanco para mas informacion</h5>
+
                             </div>
                         </div>
                         <!-- seccion vinculada a informacion -->
@@ -379,8 +376,8 @@
         </p>
         <div class="collapse" id="collapseExample">
             <div class="card card-body">
-                <div class="container mb-5 donativos">
-                    <p class="text-center"> Hola si te gusto la pagina compartela para ayudar a mas gente y si deseas apoyarme con una yuda te lo agradeceria mucho <br> Gracias por informarte y Estoy seguro que Volveremos a nuestra normalidad muy pronto 😁 </p>
+                <div class="container mb-5 mt-5 donativos">
+
                     <div class="card" style="border-radius: 20px;">
                         <div class="card-body">
                             <h5>Aqui me puedes apoyar</h5>

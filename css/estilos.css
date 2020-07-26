@@ -10,6 +10,15 @@
     color: rgb(50, 49, 49);
 }
 
+.basica {
+    padding-left: 7%!important;
+    padding-right: 7%!important;
+    padding-bottom: 4%!important;
+    background-color: rgb(47, 47, 47);
+    border-radius: 11px;
+    color: honeydew!important;
+}
+
 .secciones {
     margin-top: 4%;
 }
@@ -18,11 +27,11 @@
 /* mouse over link */
 
 a {
-    color: rgb(73, 84, 94)!important;
+    color: rgb(142, 142, 142)!important;
 }
 
 a:hover {
-    color: rgb(22, 56, 2)!important;
+    color: rgb(201, 201, 201)!important;
     text-decoration: none!important;
 }
 
